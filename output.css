@@ -340,6 +340,14 @@ pre {
   /* margin: 0; */
 }
 
+.hover\:translate-y-1:hover {
+  transform: translateY(1px);
+}
+
+.active\:translate-y-0:active {
+  transform: translateY(0);
+}
+
 fieldset {
   margin: 0;
   padding: 0;

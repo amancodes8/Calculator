@@ -14,42 +14,52 @@
 
     <div class="flex justify-center mt-8 items-center ">
         <div id="input" class="flex flex-col gap-2 bg-blue-50 w-fit h-90 p-4 border border-gray-950 shadow-lg rounded-lg justify-center items-center">
-            <div id="val" class="border bg-white text-xl font-semibold  text-black w-60 rounded-md h-20 shadow-xl px-4"></div>
-            <div class="flex gap-2">
-                <i class="button flex justify-center items-center font-semibold text-red-800 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-c" data-value="C"></i>
-                <i class="button flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 pb-2 w-12 rounded-full shadow-xl" data-value="(">( )</i>
-                <i class="button flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-percentage" data-value="%"></i>
-                <i class="button flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-divide" data-value="/"></i>
+            <div class="flex items-center ">
+                <div id="val" class="border overflow-hidden  bg-white text-xl font-semibold  text-black w-60 rounded-md h-20 shadow-xl px-4"></div>
             </div>
             <div class="flex gap-2">
-                <i class="button flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-7" data-value="7"></i>
-                <i class="button flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-8" data-value="8"></i>
-                <i class="button flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-9" data-value="9"></i>
-                <i class="button flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-multiply" data-value="*"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center  text-green-500 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl " data-value="sin">sin</i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 pb-2 w-12 rounded-full shadow-xl" data-value="cos">cos</i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl " data-value="tan">tan</i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-divide" data-value="/"></i>
+
+            </div>
+
+            <div class="flex gap-2">
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center font-semibold text-red-800 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-c" data-value="C"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center text-red-500 bg-gray-100 text-xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-delete-left" data-value="x"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-percentage" data-value="%"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-divide" data-value="/"></i>
             </div>
             <div class="flex gap-2">
-                <i class="button flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-4" data-value="4"></i>
-                <i class="button flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-5" data-value="5"></i>
-                <i class="button flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-6" data-value="6"></i>
-                <i class="button flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-minus" data-value="-"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-7" data-value="7"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-8" data-value="8"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-9" data-value="9"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-multiply" data-value="*"></i>
             </div>
             <div class="flex gap-2">
-                <i class="button flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-1" data-value="1"></i>
-                <i class="button flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-2" data-value="2"></i>
-                <i class="button flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-3" data-value="3"></i>
-                <i class="button flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-add" data-value="+"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-4" data-value="4"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-5" data-value="5"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-6" data-value="6"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-minus" data-value="-"></i>
             </div>
             <div class="flex gap-2">
-                <i class="button flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-plus-minus" data-value="+/-"></i>
-                <i class="button flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-0" data-value="0"></i>
-                <i class="button flex justify-center items-center bg-white pb-3 text-2xl border h-12 w-12 rounded-full shadow-xl" data-value=".">.</i>
-                <i class="button flex justify-center items-center bg-green-600 text-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-equals" data-value="="></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-1" data-value="1"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-2" data-value="2"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-3" data-value="3"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center text-green-500 bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-add" data-value="+"></i>
             </div>
             <div class="flex gap-2">
-                <i class="button flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-square-root-variable" data-value="√"></i>
-                <i class="button flex justify-center items-center bg-white border h-12 w-12 rounded-full shadow-xl fa-solid fa-pi" data-value="log">log</i>
-                <i class="button flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl" data-value="^">x<sup>y</sup></i>
-                <i class="button flex justify-center items-center pb-1 non-selectable cursor-tr bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl" data-value="π">π</i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-plus-minus" data-value="+/-"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center bg-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-0" data-value="0"></i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center bg-white pb-3 text-2xl border h-12 w-12 rounded-full shadow-xl" data-value=".">.</i>
+                <i class="button active:shadow-sm active:translate-y-0.5 flex justify-center items-center bg-green-600 text-white text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-equals" data-value="="></i>
+            </div>
+            <div class="flex gap-2">
+                <i class="button active:shadow-sm text-green-500 active:translate-y-0.5 flex justify-center items-center bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl fa-solid fa-square-root-variable" data-value="√"></i>
+                <i class="button active:shadow-sm text-green-500 active:translate-y-0.5 flex justify-center items-center bg-gray-100 border h-12 w-12 rounded-full shadow-xl fa-solid fa-pi" data-value="log">log</i>
+                <i class="button active:shadow-sm text-green-500 active:translate-y-0.5 flex justify-center items-center bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl" data-value="^">x<sup>y</sup></i>
+                <i class="button active:shadow-sm text-green-500 active:translate-y-0.5 flex justify-center items-center pb-1 non-selectable cursor-tr bg-gray-100 text-2xl border h-12 w-12 rounded-full shadow-xl" data-value="π">π</i>
             </div>
         </div>
     </div>

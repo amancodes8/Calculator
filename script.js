@@ -1,36 +1,49 @@
 const input = document.getElementById('val');
 const buttons = document.querySelectorAll('.button');
+function degreesToRadians(degrees) {
+    return degrees * (Math.PI / 180);
+}
 
 buttons.forEach(button => {
     button.addEventListener('click', function() {
         const value = this.getAttribute('data-value');
+       
 
-        if (value === 'C') {
+       
+
+      switch(value){
+        case 'C':
             input.textContent = '';
-        } else if (value === '=') {
-            try {
-                input.textContent = eval(input.textContent.replace('÷', '/'));
-            } catch {
-                input.textContent = 'Error';
-            }
-        } else if (value === '√') {
-            input.textContent = Math.sqrt(eval(input.textContent));
-        } else if (value === 'π') {
-            input.textContent += Math.PI;
-        } else if (value === 'log') {
-            input.textContent = Math.log10(eval(input.textContent));
-        } else if (value === '^') {
-            input.textContent += '**';
-        } else if (value === '+/-') {
-            input.textContent = input.textContent.startsWith('-') ?
-                                input.textContent.slice(1) :
-                                '-' + input.textContent;
-        } else if (value === '×') {
-            input.textContent += '*';
-        } else if (value === '÷') {
-            input.textContent += '/';
-        } else {
-            input.textContent += value;
-        }
+            break;
+            case '/':
+                input.textContent  += '/';
+                break;
+                case '√':
+                    input.textContent = Math.sqrt(eval(input.textContent));
+                    break;
+                    case '=' :
+                    input.textContent = eval(input.textContent);
+                    break;
+                    case 'sin':
+                        input.textContent = Math.sin(degreesToRadians(eval(input.textContent)));
+                        break;
+                    case 'cos':
+                        input.textContent = Math.cos(degreesToRadians((eval(input.textContent))));
+                         break;
+                    case 'tan':
+                        input.textContent = Math.tan(degreesToRadians((eval(input.textContent))));
+                        break;
+                    case '%':
+                        input.textContent = eval(input.textContent)/100;
+                        break;
+                        case 'x':
+                            input.textContent = input.textContent.slice(0, -1);
+                            break;
+                        case 'log':
+                            input.textContent = Math.log(eval(input.textContent));
+                            break;
+                    default :
+                    input.textContent += value;
+      }
     });
 });

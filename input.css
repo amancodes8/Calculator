@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.non-selectable {
+    background: url('your-image-with-text.png') no-repeat;
+  }
